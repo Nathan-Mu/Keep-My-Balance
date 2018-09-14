@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBabyBlue"
+    tools:context="edu.monash.fit4039.keepmybalance.MapActivity">
+
+    <Spinner
+        android:id="@+id/mSpDistance"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp" />
+
+    <com.mapquest.mapping.maps.MapView
+        android:id="@+id/mMapView"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:layout_marginTop="16dp"
+        app:mapquest_app_key="OM3iX2ceYtmQoBtGX7ZjuGawifRH7iWA"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+</LinearLayout>

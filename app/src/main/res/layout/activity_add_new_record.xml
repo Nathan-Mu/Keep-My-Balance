@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1"
+    android:background="@color/colorBabyBlue"
+    tools:context="edu.monash.fit4039.keepmybalance.AddNewRecordActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white_button_style"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/aSpFundChangeType"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:entries="@array/add_categories_array" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/aEtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/item_selector"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Parent Category： "
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/aSpParentCategory"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Child Category:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/aSpChildCategory"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Account:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/aSpAccount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/aBtnChooseDate"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:background="@drawable/item_selector"
+            android:text="CHOOSE DATE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Location:"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:id="@+id/aEtLocationName"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.18"
+            android:background="@drawable/item_selector"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/aEtDescription"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/aBtnConfirm"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="48dp"
+        android:layout_weight="0.01"
+        android:background="@drawable/grey_button_without_border_style"
+        android:text="Confirm"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+</LinearLayout>
